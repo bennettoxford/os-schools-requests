@@ -1,0 +1,27 @@
+name: 📤 Request to share outputs
+description: Submit a request to share outputs
+title: "[Request to share outputs]"
+labels: [share-request]
+assignees: [ShaunDill]
+
+body:
+  - type: input
+    id: repo_link
+    attributes:
+      label: 🔗 Link to repo
+      description: Paste the URL of the repository containing the code that generated the files.
+      placeholder: "https://github.com/org/repo-name"
+    validations:
+      required: true
+
+  - type: textarea
+    id: files_to_share
+    attributes:
+      label: 📦 Files to share
+      description: List the SharePoint paths of files to be shared.
+      placeholder: |
+        e.g.
+        - ouptuts/table.csv
+        - ouptuts/chart.csv
+    validations:
+      required: true

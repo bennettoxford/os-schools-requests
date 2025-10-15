@@ -1,8 +1,8 @@
 name: 🚀 Request to run code
 description: Submit a request to run code against TED data
 title: "[Request to run code]"
-labels: [request]
-assignees: []
+labels: [run-request]
+assignees: [ShaunDill]
 
 body:
   - type: input
