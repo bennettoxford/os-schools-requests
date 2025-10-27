@@ -14,6 +14,15 @@ body:
     validations:
       required: true
 
+  - type: input
+    id: issue_link
+    attributes:
+      label: 🔗 Link to run request
+      description: Paste the URL of the issue that requested that the code ran.
+      placeholder: "https://github.com/bennettoxford/os-schools-requests/issues/XXX"
+    validations:
+      required: true
+
   - type: textarea
     id: files_to_share
     attributes:
@@ -21,7 +30,7 @@ body:
       description: List the SharePoint paths of files to be shared.
       placeholder: |
         e.g.
-        - ouptuts/table.csv
-        - ouptuts/chart.csv
+        - [table.csv](SharePoint link)
+        - [chart.csv](SharePoint link)
     validations:
       required: true
